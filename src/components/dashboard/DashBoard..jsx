@@ -32,7 +32,7 @@ const Dashboard = () => {
     };
 
      const fetchUserDetails = async () => {
-            const userId = localStorage.getItem("userId");
+           
       
             if (userId) {
               try {
@@ -62,13 +62,13 @@ const Dashboard = () => {
     fetchRepositories();
     fetchSuggestedRepositories();
     fetchUserDetails();
-    const fetchStarredRepo=()=>{
-      setstarRepo(userDetails.starRepos);
+    // const fetchStarredRepo=()=>{
+    //   setstarRepo(userDetails.starRepos);
 
 
 
-      };
-      fetchStarredRepo();
+    //   };
+    //   fetchStarredRepo();
 
 
   }, []);
